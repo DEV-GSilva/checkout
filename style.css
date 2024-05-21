@@ -5,14 +5,7 @@
 }
 
 body {
-  min-height: 100vh;
   height: auto;
-  background: linear-gradient(to bottom,
-      #01080E 10%,
-      #FFF 10%,
-      #FFF 90%,
-      #01080E 90%);
-  padding: 7vh 8vw 5vh;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
 }
@@ -48,13 +41,12 @@ input[type="number"] {
 .conteudo-principal {
   filter: drop-shadow(0px 0px 70px rgba(2, 189, 255, 0.40));
   min-height: 100%;
-  padding: 5rem 6.5rem;
+  padding: 15px 15px;
   
   display: grid;
   grid-template-columns: 1.375fr 1fr;
   column-gap: 5rem;
 
-  background: white url('./assets/oculos.png') no-repeat bottom left;
   background-size: auto 40%;
 
   position: relative;
@@ -71,7 +63,6 @@ input[type="number"] {
 
 .titulo {
   font-family: 'Chakra Petch', sans-serif;
-  font-size: 5rem;
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
@@ -147,8 +138,23 @@ input[type="number"] {
   line-height: 110%;
 }
 
-.botoes-wrapper {
+.valor-input {
   display: flex;
+  height: 3.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--Light-Blue, #1875E8);
+
+  color: var(--Void, #01080E);
+  font-family: Inter;
+  font-size: 1.3125rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.botoes-wrapper {
+  display:flex;
   align-items: flex-end;
   gap: 1rem;
 }
@@ -237,5 +243,5 @@ input[type="number"] {
 }
 
 .adicionar-produto {
-  padding-bottom: 180px;
+  padding-bottom: 30px;
 }

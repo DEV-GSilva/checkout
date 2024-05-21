@@ -25,6 +25,7 @@ function adicionar() {
     campoTotal.textContent = `R$ ${totalGeral}`;
     document.getElementById('quantidade').value = 0
     document.getElementById('valor').value = 0.00
+    document.getElementById('produto').value = ''
 
 }
 
